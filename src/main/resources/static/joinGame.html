@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <title>Chat Application</title>
+      <!-- <link rel="stylesheet" href="/css/main.css" /> -->
+  </head>
+  <body>
+    <noscript>
+      <h2>Sorry! Your browser doesn't support Javascript</h2>
+    </noscript>
+
+    
+    <div>
+        <h2>Join existing game</h2>
+        <form>
+            <input id="word" type="text" placeholder="Enter your code">
+            <br>
+            <label>Enter your username</label>
+            <input type="text" id="username">
+            <br>
+            <button type="button" id="join">Join game</button>
+        </form>
+    </div>
+   
+    <script src="/js/sockjs_1.1.4.min.js"></script>
+    <script src="/js/stomp_2.3.3.min.js"></script>
+    <script src="/js/joinGame.js"></script>
+  </body>
+</html>

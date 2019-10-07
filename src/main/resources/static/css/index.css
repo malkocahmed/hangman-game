@@ -1,0 +1,10 @@
+head, body {
+    height: 100%;
+    overflow: hidden;
+}
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+

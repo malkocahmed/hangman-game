@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <title>Chat Application</title>
+      <!-- <link rel="stylesheet" href="/css/main.css" /> -->
+  </head>
+  <body>
+    <noscript>
+      <h2>Sorry! Your browser doesn't support Javascript</h2>
+    </noscript>
+    
+    <div id="home">
+        <h2>Hangman game</h2>
+        <button type="button" onclick="createGame()">Create game</button>
+        <br>
+        <button type="button" onclick="joinGame2()">Join game</button>
+    </div>
+    
+    <div id="creategame">
+        <h2>Create new game</h2>
+        <form>
+            <input id="word" type="text" placeholder="Enter the word">
+            <br>
+            <label>Enter the number of players</label>
+            <input type="number" id="number" min="2" max="5">
+            <br>
+            <button type="button" id="connect">Create game</button>
+        </form>
+    </div>
+    
+    <div id="joingame">
+        <h2>Join existing game</h2>
+        <form>
+            <input id="code" type="text" placeholder="Enter your code">
+            <br>
+            <label>Enter your username</label>
+            <input type="text" id="username">
+            <br>
+            <button type="button" id="join">Play game</button>
+        </form>
+    </div>
+    
+    <div id="playgame">
+        <h2>Play game</h2>
+        <div id="score">
+            <h3>Score</h3>
+        </div>
+        <form>
+            <input id="letter" type="text" placeholder="Enter the letter">
+            <br>
+            <button type="button" id="join">Try</button>
+        </form>
+    </div>
+
+    <script src="/js/sockjs_1.1.4.min.js"></script>
+    <script src="/js/stomp_2.3.3.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
